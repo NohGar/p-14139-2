@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RestController
 
 @RestController
 class HomeController(
+
     private val s3Service: S3Service,
     @Value("\${custom.secretWord}") private val secretWord: String
 ) {
